@@ -28,3 +28,9 @@ _Logo aplikacje:_
 _Glavni meni aplikacje:_
 
 ![__pokretanje__](/gallery/pokretanje.png)
+
+## __Single player mod__
+
+Izgled korisničkog interfejsa tokom igre u _Single player_ modu
+
+![__sp__](/gallery/singleplayer.png)
