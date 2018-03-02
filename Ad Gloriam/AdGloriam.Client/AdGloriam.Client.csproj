@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B06964F2-76FF-45FB-902B-2DEBB5311B94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ad_Gloriam</RootNamespace>
+    <AssemblyName>Ad Gloriam</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\ad_gloriam_release\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B9A61589A6E70D45E4811C38DE247008AE3984AE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AdGloriam.Client_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>application.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\ControllerHotseat.cs" />
+    <Compile Include="Controller\ControllerInternet.cs" />
+    <Compile Include="Controller\ControllerLan.cs" />
+    <Compile Include="Controller\ControllerSinglePlayer.cs" />
+    <Compile Include="Controller\IController.cs" />
+    <Compile Include="FormCreateGameInternet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreateGameInternet.Designer.cs">
+      <DependentUpon>FormCreateGameInternet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreateGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreateGame.Designer.cs">
+      <DependentUpon>FormCreateGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDialog.Designer.cs">
+      <DependentUpon>FormDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGame.Designer.cs">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJoinGameInternet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJoinGameInternet.Designer.cs">
+      <DependentUpon>FormJoinGameInternet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJoinGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJoinGame.Designer.cs">
+      <DependentUpon>FormJoinGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInternetMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInternetMenu.Designer.cs">
+      <DependentUpon>FormInternetMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLanMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLanMenu.Designer.cs">
+      <DependentUpon>FormLanMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessage.Designer.cs">
+      <DependentUpon>FormMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMultiPlayerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMultiPlayerMenu.Designer.cs">
+      <DependentUpon>FormMultiPlayerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangeThemes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangeThemes.Designer.cs">
+      <DependentUpon>FormChangeThemes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOptionsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOptionsMenu.Designer.cs">
+      <DependentUpon>FormOptionsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSinglePlayerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSinglePlayerMenu.Designer.cs">
+      <DependentUpon>FormSinglePlayerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\AudioManager.cs" />
+    <Compile Include="Model\Audio.cs" />
+    <Compile Include="Model\Board.cs" />
+    <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\GameItem.cs" />
+    <Compile Include="Model\IModel.cs" />
+    <Compile Include="Model\ModelGame.cs" />
+    <Compile Include="Model\Move.cs" />
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\IView.cs" />
+    <Compile Include="View\ResourceCollection.cs" />
+    <Compile Include="View\ResourceManager.cs" />
+    <EmbeddedResource Include="FormCreateGameInternet.resx">
+      <DependentUpon>FormCreateGameInternet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateGame.resx">
+      <DependentUpon>FormCreateGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDialog.resx">
+      <DependentUpon>FormDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGame.resx">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJoinGameInternet.resx">
+      <DependentUpon>FormJoinGameInternet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJoinGame.resx">
+      <DependentUpon>FormJoinGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInternetMenu.resx">
+      <DependentUpon>FormInternetMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLanMenu.resx">
+      <DependentUpon>FormLanMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMessage.resx">
+      <DependentUpon>FormMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMultiPlayerMenu.resx">
+      <DependentUpon>FormMultiPlayerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangeThemes.resx">
+      <DependentUpon>FormChangeThemes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOptionsMenu.resx">
+      <DependentUpon>FormOptionsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSinglePlayerMenu.resx">
+      <DependentUpon>FormSinglePlayerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AdGloriam.Client_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\token_neutral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\token_neutral_avaiable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\token_neutral_jump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\token_player1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\token_player1_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\token_player2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\token_player2_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ad_gloriam_game_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_exit_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_send_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_gray_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_singleplayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_hot_seat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_lan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_create_game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_join_game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_game_lobby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_multyplayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="application.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_random_name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_change_tokens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_change_theme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_create_game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_button_change_theme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundDisable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundEnabled.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
