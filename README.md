@@ -40,5 +40,13 @@ Izgled korisničkog interfejsa tokom igre u _Single player_ modu
 _Multiplayer_ mod podržava igranje u LAN, igranje preko interneta, kao i _hotseat_ mod (igranje za istim računarom)
 
 ![__mp__](/gallery/mpmenu.png)
+
 ![__mp1__](/gallery/mp1.png)
+
+Igrači mogu kreirati partiju. Isti postupak je za igranje u LAN-u i preko interneta.
+
 ![__mp2__](/gallery/mp2.png)
+
+Ili se mogu pridružiti već postojećoj partiji preko lobby-a.
+
+![__lobby__](/gallery/lobby.png)
