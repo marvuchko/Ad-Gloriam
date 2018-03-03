@@ -33,4 +33,6 @@ _Glavni meni aplikacje:_
 
 Izgled korisničkog interfejsa tokom igre u _Single player_ modu
 
-![__sp__](/gallery/singleplayer.png)
+![__sp__](/gallery/singleplayer1.png)
+
+## __Multiplayer mod__
