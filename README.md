@@ -41,6 +41,8 @@ _Multiplayer_ mod podržava igranje u LAN, igranje preko interneta, kao i _hotse
 
 ![__mp__](/gallery/mpmenu.png)
 
+Postoje opcije za kreiranje partije ili za pridruživanje već postojećim.
+
 ![__mp1__](/gallery/mp1.png)
 
 Igrači mogu kreirati partiju. Isti postupak je za igranje u LAN-u i preko interneta.
