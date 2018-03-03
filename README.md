@@ -36,3 +36,9 @@ Izgled korisničkog interfejsa tokom igre u _Single player_ modu
 ![__sp__](/gallery/singleplayer1.png)
 
 ## __Multiplayer mod__
+
+_Multiplayer_ mod podržava igranje u LAN, igranje preko interneta, kao i _hotseat_ mod (igranje za istim računarom)
+
+![__mp__](/gallery/mpmenu.png)
+![__mp1__](/gallery/mp1.png)
+![__mp2__](/gallery/mp2.png)
