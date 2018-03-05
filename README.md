@@ -21,34 +21,34 @@ Cilj igre je da se osvoji tabla dimenzija 8x8. Pomeranjem figura na slobodno pol
 
 Potezi se povlače naizmenično, a prvi počinje igrač koji kontroliše žuti token. Levim tasterom miša se bira željena figura za potez, zatim se od ponuđenih (na tabli se bojom ističu) bira polje za akciju. Polje mora biti slobodno i udaljeno ne više od 2 polja od biranog tokena. Ukoliko se akcija odigra na polje udaljenosti 1 na to polje se stvara novi prijateljski token. Akcija na polje udaljenosti 2 se računa kao skok i u tom slučaju se ne dobija novi prijateljski token već se birani token samo premešta na novu poziciju.
 
-_Logo aplikacje:_
+	_Logo aplikacje:_
 
 ![__Logo__](/gallery/Logo1.png)
 
-_Glavni meni aplikacje:_
+	_Glavni meni aplikacje:_
 
 ![__pokretanje__](/gallery/pokretanje.png)
 
 ## __Single player mod__
 
-Izgled korisničkog interfejsa tokom igre u _Single player_ modu
+	Izgled korisničkog interfejsa tokom igre u _Single player_ modu
 
 ![__sp__](/gallery/singleplayer1.png)
 
 ## __Multiplayer mod__
 
-_Multiplayer_ mod podržava igranje u LAN, igranje preko interneta, kao i _hotseat_ mod (igranje za istim računarom)
+	_Multiplayer_ mod podržava igranje u LAN, igranje preko interneta, kao i _hotseat_ mod (igranje za istim računarom)
 
 ![__mp__](/gallery/mpmenu.png)
 
-Postoje opcije za kreiranje partije ili za pridruživanje već postojećim.
+	Postoje opcije za kreiranje partije ili za pridruživanje već postojećim.
 
 ![__mp1__](/gallery/mp1.png)
 
-Igrači mogu kreirati partiju. Isti postupak je za igranje u LAN-u i preko interneta.
+	Igrači mogu kreirati partiju. Isti postupak je za igranje u LAN-u i preko interneta.
 
 ![__mp2__](/gallery/mp2.png)
 
-Ili se mogu pridružiti već postojećoj partiji preko lobby-a.
+	Ili se mogu pridružiti već postojećoj partiji preko lobby-a.
 
 ![__lobby__](/gallery/lobby.png)
